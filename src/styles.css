@@ -1,5 +1,6 @@
 .card {
   margin: 48px;
+  margin-bottom: 0px;
   padding: 48px;
 }
 .Today {
@@ -7,4 +8,9 @@
   top: 170px;
   left: 900px;
   position: fixed;
+}
+#link {
+  position: relative;
+  top: 0px;
+  left: 370px;
 }
