@@ -1,0 +1,10 @@
+.card {
+  margin: 48px;
+  padding: 48px;
+}
+.Today {
+  font-size: 40px;
+  top: 170px;
+  left: 900px;
+  position: fixed;
+}
