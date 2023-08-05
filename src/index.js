@@ -99,7 +99,7 @@ function getCurrentLocation(event) {
 }
 let currentLocationButton = document.querySelector("#current-location-button");
 currentLocationButton.addEventListener("click", getCurrentLocation);
-
+searchEngine("Nairobi");
 function temperature(event) {
   event.preventDefault();
   let today = document.querySelector("#celcius-change");
