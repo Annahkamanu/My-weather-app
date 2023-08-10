@@ -102,8 +102,8 @@ searchEngine("Nairobi");
 
 function temperature(event) {
   event.preventDefault();
-  let today = document.querySelector("#celcius-change");
-  today.innerHTML = "19C";
+  let celciusChange = document.querySelector("#celcius-change");
+  celciusChange.innerHTML = `${temp}°C`;
 }
 let celciusButton = document.querySelector("#celcius");
 celciusButton.addEventListener("click", temperature);
@@ -111,7 +111,8 @@ celciusButton.addEventListener("click", temperature);
 function fahrenheit(event) {
   event.preventDefault();
   let today = document.querySelector("#celcius-change");
-  today.innerHTML = "81°F";
+  let fahrenheiTemperature = (temp * 9) / 5 + 32;
+  today.innerHTML = Math.round(fahrenheiTemperature);
 }
 let fahrenheitButton = document.querySelector("#fahrenheit");
 fahrenheitButton.addEventListener("click", fahrenheit);
