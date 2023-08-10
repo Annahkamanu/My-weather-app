@@ -64,7 +64,6 @@ function showWeather(response) {
   let celciusChange = document.querySelector("#celcius-change");
   let temp = Math.round(response.data.main.temp);
   celciusChange.innerHTML = `${temp}°C`;
-
   let humidity = document.querySelector("#humidity");
   let humid = response.data.main.humidity;
   humidity.innerHTML = `The Humidity is ${humid}`;
@@ -100,10 +99,11 @@ function getCurrentLocation(event) {
 let currentLocationButton = document.querySelector("#current-location-button");
 currentLocationButton.addEventListener("click", getCurrentLocation);
 searchEngine("Nairobi");
+
 function temperature(event) {
   event.preventDefault();
   let today = document.querySelector("#celcius-change");
-  today.innerHTML = "19°C";
+  today.innerHTML = "19C";
 }
 let celciusButton = document.querySelector("#celcius");
 celciusButton.addEventListener("click", temperature);
