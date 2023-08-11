@@ -14,3 +14,15 @@
   top: 0px;
   left: 370px;
 }
+#weather {
+  list-style: none;
+  position: relative;
+  left: -30px;
+  top: 15px;
+}
+#date {
+  font-weight: lighter;
+}
+#time {
+  font-weight: lighter;
+}

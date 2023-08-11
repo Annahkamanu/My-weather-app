@@ -20,7 +20,7 @@ function getDate() {
   let currentDate = today.getDate();
   let currentYear = today.getFullYear();
 
-  return `${currentDay},${currentMonth} ${currentDate},${currentYear} `;
+  return ` Last updated ${currentDay}:${currentMonth} ${currentDate}:${currentYear} `;
 }
 
 let h2 = document.querySelector("#date");
@@ -67,10 +67,10 @@ function showWeather(response) {
   celciusChange.innerHTML = `${temp}°C`;
   let humidity = document.querySelector("#humidity");
   let humid = response.data.main.humidity;
-  humidity.innerHTML = `The Humidity is ${humid}`;
+  humidity.innerHTML = `The Humidity is ${humid}%`;
   let wind = document.querySelector("#wind");
   let windspeed = Math.round(response.data.wind.speed);
-  wind.innerHTML = `The wind speed is ${windspeed}`;
+  wind.innerHTML = `The wind speed is ${windspeed}km/h`;
   let description = document.querySelector("#description");
   description.innerHTML = response.data.weather[0].main;
   let weatherIcon = document.querySelector("#icon");
