@@ -58,6 +58,8 @@ function handleSubmit(event) {
 let searchForm = document.querySelector("#search-form");
 searchForm.addEventListener("submit", handleSubmit);
 
+let temp = null;
+
 function showWeather(response) {
   console.log(response);
   document.querySelector("#city").innerHTML = response.data.name;
