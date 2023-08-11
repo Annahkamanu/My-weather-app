@@ -58,13 +58,12 @@ function handleSubmit(event) {
 let searchForm = document.querySelector("#search-form");
 searchForm.addEventListener("submit", handleSubmit);
 
-let temp = null;
-
 function showWeather(response) {
   console.log(response);
   document.querySelector("#city").innerHTML = response.data.name;
   let celciusChange = document.querySelector("#celcius-change");
-  let temp = Math.round(response.data.main.temp);
+
+  temp = Math.round(response.data.main.temp);
   celciusChange.innerHTML = `${temp}°C`;
   let humidity = document.querySelector("#humidity");
   let humid = response.data.main.humidity;
@@ -113,8 +112,10 @@ celciusButton.addEventListener("click", temperature);
 function fahrenheit(event) {
   event.preventDefault();
   let today = document.querySelector("#celcius-change");
-  let fahrenheiTemperature = (temp * 9) / 5 + 32;
-  today.innerHTML = Math.round(fahrenheiTemperature);
+  let fahrenheiTemperature = Math.round((temp * 9) / 5 + 32);
+  today.innerHTML = `${fahrenheiTemperature}°C`;
 }
 let fahrenheitButton = document.querySelector("#fahrenheit");
 fahrenheitButton.addEventListener("click", fahrenheit);
+
+let temp = null;
