@@ -113,7 +113,7 @@ function fahrenheit(event) {
   event.preventDefault();
   let today = document.querySelector("#celcius-change");
   let fahrenheiTemperature = Math.round((temp * 9) / 5 + 32);
-  today.innerHTML = `${fahrenheiTemperature}°C`;
+  today.innerHTML = `${fahrenheiTemperature}°F`;
 }
 let fahrenheitButton = document.querySelector("#fahrenheit");
 fahrenheitButton.addEventListener("click", fahrenheit);
