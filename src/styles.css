@@ -25,6 +25,7 @@
   left: 370px;
 }
 #weather {
+  font-size: larger;
   list-style: none;
   position: relative;
   left: 300px;
