@@ -21,6 +21,7 @@
           <div class="card" style="width: 48rem">
             <div class="card-body">
               <h1 class="card-title"><div id="city"></div></h1>
+
               <p class="card-text"></p>
               <form id="search-form">
                 <input
@@ -61,18 +62,18 @@
                     °F
                   </button>
                 </div>
+                <h2>
+                  <div id="date"></div>
+                </h2>
+                <br />
+                <h3><div id="time"></div></h3>
+
                 <div class="row">
-                  <div class="Today">
+                  <span class="Today">
                     <span><img src="" alt="" id="icon" /></span><br />
                     Currently <br />
                     <span id="celcius-change">21° C</span>
-                  </div>
-
-                  <h2>
-                    <div id="date"></div>
-                  </h2>
-                  <br />
-                  <h3><div id="time"></div></h3>
+                  </span>
 
                   <div class="row">
                     <div class="col">
@@ -86,7 +87,7 @@
                       </ul>
                     </div>
                   </div>
-                  <div>
+                  <div id="weather-forecast">
                     <strong>Weather Forecast</strong>
                   </div>
                   <div class="container" id="forecast"></div>

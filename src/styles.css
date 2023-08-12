@@ -13,9 +13,9 @@
 }
 .Today {
   font-size: 40px;
-  top: 270px;
-  left: 1000px;
-  position: fixed;
+  top: 10px;
+  left: 0px;
+  position: relative;
   font-weight: lighter;
 }
 
@@ -27,8 +27,8 @@
 #weather {
   list-style: none;
   position: relative;
-  left: -30px;
-  top: 15px;
+  left: 300px;
+  top: -150px;
   font-weight: lighter;
 }
 #date {
