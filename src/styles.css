@@ -1,19 +1,20 @@
 .card {
-  margin: 48px;
+  margin: 0 auto;
   margin-bottom: 10px;
   padding: 48px;
+  display: block;
 }
 .container {
   border-radius: 10px;
   padding: 10px 30px 30px;
-  background-image: url(" https://s3.amazonaws.com/shecodesio-production/uploads/files/000/093/075/original/Cloud_.jpg?1691827285");
+  background-image: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/093/081/original/clouds-animationl.gif?1691837889");
   background-size: cover;
-  margin: 50px auto 0;
+  margin: 80px auto 0;
 }
 .Today {
   font-size: 40px;
-  top: 470px;
-  left: 900px;
+  top: 270px;
+  left: 1080px;
   position: fixed;
   font-weight: lighter;
 }
@@ -35,4 +36,7 @@
 }
 #time {
   font-weight: lighter;
+}
+#forecast {
+  font-weight: bolder;
 }
