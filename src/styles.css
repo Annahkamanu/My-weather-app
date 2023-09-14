@@ -41,3 +41,8 @@
 #forecast {
   font-weight: bolder;
 }
+@media (max-width: 850px) {
+  .container {
+    max-width: 100%;
+  }
+}

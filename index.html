@@ -9,16 +9,16 @@
       integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="src/styles.css" />
+    <link rel="stylesheet" href="/src/styles.css" />
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 
     <title>My Weather-web app</title>
   </head>
-  <body>
-    <div class="container">
+  <body class="container">
+    <div>
       <div class="row">
         <div class="col">
-          <div class="card" style="width: 48rem">
+          <div class="card d-centered" style="width: 48rem">
             <div class="card-body">
               <h1 class="card-title"><div id="city"></div></h1>
 
@@ -90,7 +90,7 @@
                   <div id="weather-forecast">
                     <strong>Weather Forecast</strong>
                   </div>
-                  <div class="container" id="forecast"></div>
+                  <div id="forecast"></div>
                 </div>
               </form>
             </div>
@@ -99,13 +99,13 @@
       </div>
     </div>
 
-    <p id="link">
+    <span id="link">
       <a href="https://github.com/Annahkamanu/My-weather-app" target="_blank"
         >Open-source Code</a
       >
       by Ann Kamanu
-    </p>
+    </span>
 
-    <script src="src/index.js"></script>
+    <script src="/src/index.js"></script>
   </body>
 </html>
