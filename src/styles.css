@@ -1,6 +1,11 @@
 .app {
   color: white;
   padding: 50px;
+  background-color: #2c2c2c;
+  border: 200px;
+  max-width: 60%;
+  display: block;
+  margin: 0 auto;
 }
 .container-fluid {
   background-image: url(https://s3.amazonaws.com/shecodesio-production/uploads/files/000/097/567/original/Background_%281%29.png?1695051286);
@@ -38,7 +43,7 @@
 #forecast {
   font-weight: bolder;
 }
-@media (max-width: 750px) {
+@media (max-width: 1000px) {
   #weather {
     margin-left: -340px;
     margin-top: 200px;
@@ -51,5 +56,21 @@
   }
   #link {
     margin-left: -310px;
+  }
+  .app {
+    max-width: 60%;
+    display: block;
+    margin: 0 auto;
+  }
+}
+@media (max-width: 576px) {
+  .app {
+    max-width: 90%;
+    display: block;
+    margin: 0 auto;
+  }
+  .btn {
+    margin-top: 5px;
+    margin-bottom: 5px;
   }
 }

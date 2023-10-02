@@ -16,84 +16,73 @@
   </head>
   <body class="container-fluid">
     <div>
-      <div class="row app">
+      <div class="row app border border-light">
         <div class="col">
-          
-              <h1 class="card-title"><div id="city"></div></h1>
+          <h1 class="card-title"><div id="city"></div></h1>
 
-              <p class="card-text"></p>
-              <form id="search-form">
-                <input
-                  type="text"
-                  placeholder="Enter City Name"
-                  autofocus="on"
-                  id="search-input"
-                />
-                <button
-                  type="submit"
-                  class="btn btn-primary"
-                  id="search-button"
-                >
-                  Search
-                </button>
+          <p class="card-text"></p>
+          <form id="search-form">
+            <input
+              type="text"
+              placeholder="Enter City Name"
+              autofocus="on"
+              id="search-input"
+            />
+            <button type="submit" class="btn btn-primary" id="search-button">
+              Search
+            </button>
 
-                <button
-                  type="submit"
-                  class="btn btn-primary"
-                  id="current-location-button"
-                >
-                  Current Location
-                </button>
+            <button
+              type="submit"
+              class="btn btn-primary"
+              id="current-location-button"
+            >
+              Current Location
+            </button>
 
-                <div>
-                  <button
-                    type="button"
-                    class="btn btn-outline-info"
-                    id="celcius"
-                  >
-                    °C
-                  </button>
-                  <button
-                    type="button"
-                    class="btn btn-outline-info"
-                    id="fahrenheit"
-                  >
-                    °F
-                  </button>
-                </div>
-                <h2>
-                  <div id="date"></div>
-                </h2>
-                <br />
-                <h3><div id="time"></div></h3>
-
-                <div class="row">
-                  <span class="Today">
-                    <span><img src="" alt="" id="icon" /></span><br />
-                    Currently <br />
-                    <span id="celcius-change">21° C</span>
-                  </span>
-
-                  <div class="row">
-                    <div class="col">
-                      <ul id="weather">
-                        <h5>
-                          <strong> <em> weather description</em> </strong>
-                        </h5>
-                        <li id="description">Precipitation: 49%</li>
-                        <li id="humidity">Humidity: 64%</li>
-                        <li id="wind">Wind: 13 mph</li>
-                      </ul>
-                    </div>
-                  </div>
-                  <div id="weather-forecast">
-                    <strong>Weather Forecast</strong>
-                  </div>
-                  <div id="forecast"></div>
-                </div>
-              </form>
+            <div>
+              <button type="button" class="btn btn-outline-info" id="celcius">
+                °C
+              </button>
+              <button
+                type="button"
+                class="btn btn-outline-info"
+                id="fahrenheit"
+              >
+                °F
+              </button>
             </div>
-          </div>
+            <h2>
+              <div id="date"></div>
+            </h2>
+            <br />
+            <h3><div id="time"></div></h3>
+
+            <div class="row">
+              <span class="Today">
+                <span><img src="" alt="" id="icon" /></span><br />
+                Currently <br />
+                <span id="celcius-change">21° C</span>
+              </span>
+
+              <div class="row">
+                <div class="col">
+                  <ul id="weather">
+                    <h5>
+                      <strong> <em> weather description</em> </strong>
+                    </h5>
+                    <li id="description">Precipitation: 49%</li>
+                    <li id="humidity">Humidity: 64%</li>
+                    <li id="wind">Wind: 13 mph</li>
+                  </ul>
+                </div>
+              </div>
+              <div id="weather-forecast">
+                <strong>Weather Forecast</strong>
+              </div>
+              <div id="forecast"></div>
+            </div>
+          </form>
         </div>
       </div>
     </div>
