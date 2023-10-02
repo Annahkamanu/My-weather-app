@@ -6,13 +6,9 @@
   color: white;
   display: block;
 }
-.container {
-  border-radius: 10px;
-  padding: 10px 30px 30px;
-  background-size: cover;
+.container-fluid {
   background-image: url(https://s3.amazonaws.com/shecodesio-production/uploads/files/000/097/567/original/Background_%281%29.png?1695051286);
-  margin: 80px auto 0;
-
+  max-width: fit-content;
   background-color: black;
 }
 .Today {
@@ -46,8 +42,19 @@
 #forecast {
   font-weight: bolder;
 }
-@media (max-width: 850px) {
-  .container {
-    max-width: 100%;
+@media (max-width: 1300px) {
+  .card {
+    width: 100%;
+    padding: 20px;
+  }
+}
+@media (max-width: 768px) {
+  .card {
+    padding: 10px;
+  }
+}
+@media (max-width: 576px) {
+  .card {
+    padding: 10px;
   }
 }
